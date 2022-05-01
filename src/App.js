@@ -1,7 +1,9 @@
+import NavBar from './components/navbar/NavBar';
+
 function App() {
   return (
     <div className="App">
-      <h1>Group project</h1>
+      <NavBar />
     </div>
   );
 }

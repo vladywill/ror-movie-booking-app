@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleLeft, faSortAmountUp } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleDoubleLeft, faHouse, faCartArrowDown, faCamera, faFilm, faBookmark, faRoute,
+  faClock,
+} from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/navbar/NavBar.scss';
 
 const NavBar = () => {
   const [open, setOpen] = useState(true);
 
   const menu = [
-    { title: 'Home', icon: faAngleDoubleLeft, href: '#home' },
-    { title: 'My Reservation', icon: faAngleDoubleLeft, href: '#my-reservation' },
-    { title: 'Latest Movies', icon: faAngleDoubleLeft, href: '#latest-movies' },
-    { title: 'Upcoming Movies', icon: faAngleDoubleLeft, href: '#upcoming-movies' },
-    { title: 'Book Movies', icon: faAngleDoubleLeft, href: '#book-movies' },
-    { title: 'Watch Live', icon: faAngleDoubleLeft, href: '#watch-live' },
+    { title: 'Home', icon: faHouse, href: '#home' },
+    { title: 'My Reservation', icon: faCartArrowDown, href: '#my-reservation' },
+    { title: 'Latest Movies', icon: faClock, href: '#latest-movies' },
+    { title: 'Upcoming Movies', icon: faFilm, href: '#upcoming-movies' },
+    { title: 'Book Movies', icon: faBookmark, href: '#book-movies' },
+    { title: 'Watch Live', icon: faRoute, href: '#watch-live' },
   ];
   return (
 
@@ -30,7 +33,7 @@ const NavBar = () => {
           />
           <div className="flex gap-x-4 items-center">
             <FontAwesomeIcon
-              icon={faSortAmountUp}
+              icon={faCamera}
               className={`bg-[#fff] p-2 cursor-pointer duration-500
               ${open && 'rotate-[360deg]'}`}
             />
@@ -40,7 +43,7 @@ const NavBar = () => {
               Movies
             </h1>
           </div>
-          <ul className="p-7 text-2xl font-semibold flex-1 h-screen">
+          <ul className="p-7 font-semibold flex-1 h-screen">
             {menu.map((menu) => (
               <li
                 key={uuidv4()}
@@ -48,7 +51,7 @@ const NavBar = () => {
                 gap-x-4 p-2 hover:bg-light-white rounded-md"
               >
                 <FontAwesomeIcon icon={menu.icon} alt="Icon" />
-                <a href={menu.href} className={`${!open && 'hidden'} origin-left duration-300`}>
+                <a href={menu.href} className={`${!open && 'hidden'} origin-left duration-300 text-[16px] `}>
                   {menu.title}
                 </a>
 

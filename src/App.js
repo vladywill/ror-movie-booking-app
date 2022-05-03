@@ -1,9 +1,11 @@
+import Movies from './components/movie/Movies';
 import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar />
+      <Movies />
     </div>
   );
 }

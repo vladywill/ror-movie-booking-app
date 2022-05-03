@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
 
     <div>
-      <header className="flex">
+      <header className="flex fixed">
         <nav className={`${open ? 'w-72' : 'w-20'} 
         h-screen p-5 pt-8 bg-dark-purple duration-300 relative`}
         >

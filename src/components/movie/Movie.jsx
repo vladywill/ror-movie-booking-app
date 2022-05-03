@@ -1,7 +1,9 @@
 const Movie = () => (
-  <div>
-    <h1>Single move component</h1>
-    <p>A single movie shows in the component</p>
+  <div className="shadow-md bg-white p-5">
+    <p>Movie image</p>
+    <h1>Movie Title</h1>
+    <p>Movie description</p>
+    <p>Social media icons</p>
   </div>
 );
 

@@ -11,6 +11,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Movies />} />
+        <Route path="/movies" element={<Movies />} />
+        {/* <Route path="/movies/:id" element={<MovieDetails />} />
+        <Route path="/reservations" element={<Reservations />} />
+        <Route path="/latest-movies" element={<LatestMovies />} />
+        <Route path="/upcoming-movies" element={<UpComingMovies />} /> */}
       </Routes>
     </BrowserRouter>
   );

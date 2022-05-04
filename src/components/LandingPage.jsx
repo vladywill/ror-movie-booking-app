@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => (
@@ -12,7 +12,10 @@ const LandingPage = () => (
             Multiverse of Darkness
           </h2>
           <div className="flex justify-center">
-            <Link to="/movies" className="my-6 py-4 px-24 bg-white border uppercase text-gray-900 font-semibold hover:border-white hover:bg-gray-900 hover:text-white">
+            <Link
+              to="/movies"
+              className="my-6 py-4 px-24 bg-white border uppercase text-gray-900 font-semibold hover:border-white hover:bg-gray-900 hover:text-white"
+            >
               Browse More Movies
             </Link>
           </div>

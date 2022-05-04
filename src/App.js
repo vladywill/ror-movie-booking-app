@@ -1,12 +1,18 @@
+import {
+  BrowserRouter, Routes, Route,
+} from 'react-router-dom';
+
 import Movies from './components/movie/Movies';
 import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
-      <Movies />
-    </div>
+      <Routes>
+        <Route path="/" element={<Movies />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

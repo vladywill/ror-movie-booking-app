@@ -9,7 +9,7 @@ const LandingPage = () => (
           <h1 className="text-center text-3xl text-white">Doctor Strange</h1>
           <h2 className="text-center text-lg text-white">In The</h2>
           <h2 className="text-center text-2xl text-white">
-            Multiverse of Darkness
+            Multiverse of Madness
           </h2>
           <div className="flex justify-center">
             <Link

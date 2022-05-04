@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   TiSocialFacebook,
   TiSocialTwitter,
@@ -18,6 +19,15 @@ const Movie = () => (
         commodo elit nibh.
       </p>
     </div>
+    <div className="mt-10 text-center">
+      <Link to="/movies/:id" className="font-semibold">
+        Movie Title
+      </Link>
+    </div>
+    <p className="mt-10 text-center text-sm text-gray-400">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      commodo elit nibh.
+    </p>
     <div className="mt-5 flex justify-center items-center">
       <ul className="flex items-center">
         <li className="w-8 h-8 border border-gray-300 rounded-full flex justify-center items-center">

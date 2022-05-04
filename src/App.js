@@ -4,8 +4,6 @@ import {
 } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import Movies from './components/movie/Movies';
 import NavBar from './components/navbar/NavBar';
 import MovieDetails from './components/movie/MovieDetails';

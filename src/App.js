@@ -4,6 +4,7 @@ import {
 
 import Movies from './components/movie/Movies';
 import NavBar from './components/navbar/NavBar';
+import MovieDetails from './components/movie/MovieDetails';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Movies />} />
-        {/* <Route path="/movies/:id" element={<MovieDetails />} />
+        <Route path="/movies/:id" element={<MovieDetails />} />
+        {/*
         <Route path="/my-reservation" element={<MyReservation />} />
         <Route path="/latest-movies" element={<LatestMovies />} />
         <Route path="/upcoming-movies" element={<UpComingMovies />} /> */}

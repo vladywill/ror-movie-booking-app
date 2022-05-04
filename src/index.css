@@ -23,7 +23,7 @@ h6 {
 .landing-hero {
   width: 100%;
   height: 100vh;
-  background-image: url("./assets/images/hero-bg.jpg");
+  background-image: url("../public/images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -2,11 +2,11 @@ import React from 'react';
 
 const MovieDetails = () => (
   <div className="container mx-auto py-24 px-32 flex">
-    <div className="w-3/5 bg-red-400 mr-10 h-96">
+    <div className="w-3/5 bg-gray-400 mr-10 h-96 p-5">
       <h1>Movie Poster</h1>
     </div>
     <div className="w-2/5 bg-white shadow-lg relative">
-      <div className="bg-red-900 py-2">
+      <div className="bg-gray-900 py-2">
         <h2 className="text-lg text-white text-center">Movie poster details</h2>
       </div>
       <div className="px-6">
@@ -29,7 +29,7 @@ const MovieDetails = () => (
       </div>
       <button
         type="button"
-        className="absolute bottom-0 right-0 my-4 mr-6 bg-red-600 px-12 py-2 text-lg text-white hover:bg-red-800"
+        className="absolute bottom-0 right-0 my-4 mr-6 bg-gray-600 px-12 py-2 text-lg text-white hover:bg-gray-800"
       >
         Reserve
       </button>

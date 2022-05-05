@@ -6,6 +6,7 @@ import {
   faAngleDoubleLeft,
   faHouse,
   faCartArrowDown,
+  faCameraRetro,
   faCamera,
   faFilm,
   faBookmark,
@@ -21,7 +22,7 @@ const NavBar = () => {
 
   const menu = [
     { title: 'Home', icon: faHouse, href: '/' },
-    { title: 'Movies', icon: faHouse, href: '/movies' },
+    { title: 'Movies', icon: faCameraRetro, href: '/movies' },
     { title: 'My Reservation', icon: faCartArrowDown, href: 'my-reservation' },
     { title: 'Latest Movies', icon: faClock, href: 'latest-movies' },
     { title: 'Upcoming Movies', icon: faFilm, href: 'upcoming-movies' },
@@ -60,7 +61,7 @@ const NavBar = () => {
             {menu.map((menu) => (
               <li
                 key={uuidv4()}
-                className="text-gray-300 text-sm flex items-center
+                className="text-gray-300 text-sm flex pb-7 items-center
                 gap-x-4 p-2 hover:bg-light-white rounded-md"
               >
                 <FontAwesomeIcon icon={menu.icon} alt="Icon" />
@@ -76,7 +77,7 @@ const NavBar = () => {
             ))}
           </ul>
         </nav>
-        <div className="absolute bottom-[0]">
+        <div className={`${!open && 'hidden'} absolute bottom-[0]`}>
           <Footer />
         </div>
       </header>

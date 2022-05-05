@@ -13,7 +13,7 @@ const LandingPage = () => (
           </h2>
           <div className="flex justify-center">
             <Link
-              to="/"
+              to="/movies"
               className="my-6 py-4 px-24 bg-white border uppercase text-gray-900 font-semibold hover:border-white hover:bg-gray-900 hover:text-white"
             >
               Browse More Movies

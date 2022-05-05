@@ -6,6 +6,7 @@ import {
   faAngleDoubleLeft,
   faHouse,
   faCartArrowDown,
+  faCameraRetro,
   faCamera,
   faFilm,
   faBookmark,
@@ -13,12 +14,15 @@ import {
   faClock,
 } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/navbar/NavBar.scss';
+import Footer from './Footer';
+// import Footer from './Footer';
 
 const NavBar = () => {
   const [open, setOpen] = useState(true);
 
   const menu = [
-    { title: 'Movies', icon: faHouse, href: '/' },
+    { title: 'Home', icon: faHouse, href: '/' },
+    { title: 'Movies', icon: faCameraRetro, href: '/movies' },
     { title: 'My Reservation', icon: faCartArrowDown, href: 'my-reservation' },
     { title: 'Latest Movies', icon: faClock, href: 'latest-movies' },
     { title: 'Upcoming Movies', icon: faFilm, href: 'upcoming-movies' },
@@ -57,15 +61,18 @@ const NavBar = () => {
             {menu.map((menu) => (
               <li
                 key={uuidv4()}
-                className="text-gray-300 text-sm flex items-center
-                gap-x-4 p-2 hover:bg-light-white rounded-md"
+                className={`${
+                  open
+                  && 'hover:bg-light-white rounded-md'} hover:opacity-[0.5] text-gray-300 text-sm flex pb-7 items-center gap-x-4 p-2 pl-0`}
               >
-                <FontAwesomeIcon icon={menu.icon} alt="Icon" />
+                <Link to={menu.href}>
+                  <FontAwesomeIcon icon={menu.icon} alt="Icon" className="pl-0" />
+                </Link>
                 <Link
                   to={menu.href}
                   className={`${
                     !open && 'hidden'
-                  } origin-left duration-300 text-[16px] `}
+                  } origin-left duration-300 text-[16px]  `}
                 >
                   {menu.title}
                 </Link>
@@ -73,6 +80,9 @@ const NavBar = () => {
             ))}
           </ul>
         </nav>
+        <div className={`${!open && 'hidden'} absolute bottom-[0]`}>
+          <Footer />
+        </div>
       </header>
     </div>
   );

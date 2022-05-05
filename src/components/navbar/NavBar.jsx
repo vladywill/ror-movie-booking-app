@@ -13,12 +13,15 @@ import {
   faClock,
 } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/navbar/NavBar.scss';
+import Footer from './Footer';
+// import Footer from './Footer';
 
 const NavBar = () => {
   const [open, setOpen] = useState(true);
 
   const menu = [
-    { title: 'Movies', icon: faHouse, href: '/' },
+    { title: 'Home', icon: faHouse, href: '/' },
+    { title: 'Movies', icon: faHouse, href: '/movies' },
     { title: 'My Reservation', icon: faCartArrowDown, href: 'my-reservation' },
     { title: 'Latest Movies', icon: faClock, href: 'latest-movies' },
     { title: 'Upcoming Movies', icon: faFilm, href: 'upcoming-movies' },
@@ -73,6 +76,9 @@ const NavBar = () => {
             ))}
           </ul>
         </nav>
+        <div className="absolute bottom-[0]">
+          <Footer />
+        </div>
       </header>
     </div>
   );

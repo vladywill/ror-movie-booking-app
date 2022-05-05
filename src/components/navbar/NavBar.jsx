@@ -61,10 +61,13 @@ const NavBar = () => {
             {menu.map((menu) => (
               <li
                 key={uuidv4()}
-                className="text-gray-300 text-sm flex pb-7 items-center
-                gap-x-4 p-2 pl-0 hover:bg-light-white rounded-md"
+                className={`${
+                  open
+                  && 'hover:bg-light-white rounded-md'} text-gray-300 text-sm flex pb-7 items-center gap-x-4 p-2 pl-0`}
               >
-                <FontAwesomeIcon icon={menu.icon} alt="Icon" className="pl-0" />
+                <Link to={menu.href}>
+                  <FontAwesomeIcon icon={menu.icon} alt="Icon" className="pl-0" />
+                </Link>
                 <Link
                   to={menu.href}
                   className={`${

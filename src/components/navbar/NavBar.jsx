@@ -62,14 +62,14 @@ const NavBar = () => {
               <li
                 key={uuidv4()}
                 className="text-gray-300 text-sm flex pb-7 items-center
-                gap-x-4 p-2 hover:bg-light-white rounded-md"
+                gap-x-4 p-2 pl-0 hover:bg-light-white rounded-md"
               >
-                <FontAwesomeIcon icon={menu.icon} alt="Icon" />
+                <FontAwesomeIcon icon={menu.icon} alt="Icon" className="pl-0" />
                 <Link
                   to={menu.href}
                   className={`${
                     !open && 'hidden'
-                  } origin-left duration-300 text-[16px] `}
+                  } origin-left duration-300 text-[16px]  `}
                 >
                   {menu.title}
                 </Link>

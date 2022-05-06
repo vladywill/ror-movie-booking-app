@@ -10,3 +10,8 @@ export const createReservationAction = (payload) => ({
     type: CREATE_RESERVATION,
     payload,
   });
+
+  export const getSingleReservationAction = (payload) => ({
+    type: GET_SINGLE_RESERVATION,
+    payload,
+  });

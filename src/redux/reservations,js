@@ -20,3 +20,8 @@ export const createReservationAction = (payload) => ({
     type: GET_ALL_RESERVATION,
     payload,
   });
+
+  export const deleteAReservationAction = (payload) => ({
+    type: DELETE_RESERVATION,
+    payload,
+  });

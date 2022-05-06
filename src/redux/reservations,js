@@ -15,3 +15,8 @@ export const createReservationAction = (payload) => ({
     type: GET_SINGLE_RESERVATION,
     payload,
   });
+
+  export const getAllReservationAction = (payload) => ({
+    type: GET_ALL_RESERVATION,
+    payload,
+  });

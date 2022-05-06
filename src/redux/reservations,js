@@ -42,3 +42,9 @@ export const createReservation = (payload) => async (dispatch) => {
 };
 
 const initialState = [];
+
+
+const reservationsReducer = (state = initialState, action) => {
+    switch (action.type) {
+      case CREATE_RESERVATION:
+        return [...state, action.payload];

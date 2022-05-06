@@ -34,3 +34,11 @@ export const createReservation = (payload) => async (dispatch) => {
       headers: {
         Authorization: `${token}`,
         'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  });
+  const data = await response.json();
+  dispatch(createReservationAction(data));
+};
+
+const initialState = [];

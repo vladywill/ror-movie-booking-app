@@ -4,3 +4,8 @@ const initialState = [];
 const FETCH_DATA = 'rooms/FETCH_DATA';
 const UPDATE_STATE = 'rooms/UPDATE_STATE';
 const CREATE_ROOM = 'rooms/BOOK_MOVIE';
+
+export const createNewRoom = (payload) => ({
+    type: BOOk_MOVIE,
+    payload,
+  });

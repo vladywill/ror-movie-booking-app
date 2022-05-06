@@ -1,9 +1,12 @@
+const START_ACTION = 'START_ACTION';
+const STOP_ACTION = 'STOP_ACTION';
+
 export const startAction = {
-  type: 'start',
+  type: START_ACTION,
   payload: true,
 };
 
 export const stopAction = {
-  type: 'stop',
+  type: STOP_ACTION,
   payload: true,
 };

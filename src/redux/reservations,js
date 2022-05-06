@@ -48,3 +48,7 @@ const reservationsReducer = (state = initialState, action) => {
     switch (action.type) {
       case CREATE_RESERVATION:
         return [...state, action.payload];
+        case GET_SINGLE_RESERVATION:
+      return action.payload;
+    case GET_ALL_RESERVATION:
+      return [...state, action.payload];

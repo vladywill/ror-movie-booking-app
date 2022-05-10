@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Movie Booking app Filmify
+This is a movie app which allows registered users to book and reserve movies of their choice 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This app is a front-end side of final capstone project. You can find the back-end app [here](https://github.com/KingsleyIbe/movie-booking-app-backend). 
+- Direct link to [Kanban board](https://github.com/KingsleyIbe/movie-booking-app-frontend/projects/1) for whole capstone project
 
-## Available Scripts
 
-In the project directory, you can run:
+# Demo Account
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Built with
+ - React
+ - Redux
+ - React Rpouter DOM
+ - API
+ 
 
-### `npm test`
+## The learning objective of this project are
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Create react front end app
+- Connect react front end app to rails back end
+- Use API end point to get data
+- Fetch data from the API
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple example steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React](https://reactjs.org/tutorial/tutorial.html#prerequisites)
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ```git https://github.com/KingsleyIbe/movie-booking-app-frontend.git``
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ```cd movie-booking-app-frontend```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running The App Locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Run `npm install`
 
-## Learn More
+- Make sure to run our [React frontend application](https://github.com/KingsleyIbe/movie-booking-app-frontend) first before running the React app so that it takes up the `port 3000`. This is very important as our rails API end point must run on `port 3000` for the API to work.
+- Once the back end is runing on `port 3000` then start the react app and you will be prompted to run the server on another port like `port 3001`. You will receive a message in your terminal like this `Would you like to run the app on another port instead? » (Y/n)`. Please enter `y` so that the react app will start on `port 3001`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **KingsleyIbe**
 
-### Code Splitting
+- GitHub: [KingsleyIbe](https://github.com/KingsleyIbe)
+- Twitter: [Twitter](https://twitter.com/ibekingsley2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingsley-ibe/)
+ 
+ 
+ 👤 Amadu Kamara (Amkam)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [GitHub](https://github.com/AmaduKamara)
+- [LinkedIn](https://www.linkedin.com/in/amadu-kamara-3b60a25b)
+- [Twitter](https://twitter.com/DevAmkam)
+- [Facebook](https://www.facebook.com/amadus.kamara.7)
 
-### Analyzing the Bundle Size
+👤 Busiwa Liuma
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- GitHub: (https://github.com/Busiwa24) 
+- Twitter: (https://twitter.com/busiwaliuma) 
+- LinkedIn: (https://www.linkedin.com/in/busiwa-liuma-)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contributing
 
-### Advanced Configuration
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to check the [issues page](https://github.com/KingsleyIbe/movie-booking-app-frontend/issues).
 
-### Deployment
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Give a ⭐️ if you like this project!
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Hats off to [Murat Korkmaz](https://www.behance.net/muratk) for designing the awesome template that was used. ✨
+- Microverse for giving us this opportunity
+- The amazing code reviewers for making us improve every day 👍
+
+## 📝 License
+
+This project is [MIT](./LICENCE) licensed.
+* ...

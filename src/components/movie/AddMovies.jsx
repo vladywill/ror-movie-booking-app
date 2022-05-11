@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AddMovies = () => (
-  <div>AddMovies</div>
+    <div className="w-full h-screen flex justify-center items-center"> AddMovies</div>
 );
 
 export default AddMovies;

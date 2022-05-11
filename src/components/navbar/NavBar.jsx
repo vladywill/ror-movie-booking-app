@@ -15,7 +15,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/navbar/NavBar.scss';
 import Footer from './Footer';
-// import Footer from './Footer';
 
 const NavBar = () => {
   const [open, setOpen] = useState(true);

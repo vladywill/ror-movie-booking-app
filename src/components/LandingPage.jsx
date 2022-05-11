@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavBar from './navbar/NavBar';
 
 const LandingPage = () => (
   <div className="landing-hero">
+    <NavBar />
     <div className="container mx-auto px-32 flex justify-center items-baseline">
       <div className="w-7/12 h-64 bg-gray-900 absolute bottom-0 rounded-tr-full rounded-tl-full flex justify-center">
         <div className="w-8/12 py-10">

@@ -15,12 +15,12 @@ const Login = () => {
 
   return (
     <div className="w-full h-screen flex justify-center items-center register-login">
-      <div className="w-1/4 h-96 bg-white shadow-xl rounded-md p-5">
+      <div className="md:w-2/4 lg:w-1/4 mx-5 h-96 bg-white shadow-xl rounded-md p-5">
         <h1 className="text-center font-semibold text-gray-900 uppercase">
           Login
         </h1>
 
-        <form className="mt-16 px-10">
+        <form className="mt-16 md:px-10 px-4">
           <label htmlFor="username" className="block">
             <span className="mb-1 block font-semibold">Username</span>
             <input

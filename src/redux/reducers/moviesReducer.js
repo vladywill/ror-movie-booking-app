@@ -20,16 +20,18 @@ export const fetchMovies = () => async (dispatch) => {
     const fetchedMovies = await axios.post(
       'http://localhost:3000/api/v1/movies',
     );
-    movies = fetchedMovies.data.user;
-  } catch (error) {}
-  dispatch(movies(user));
+    movies = fetchedMovies.data.movies;
+  } catch (error) {
+    movies = error.response.data.movies;
+  }
+  dispatch(movies(movies));
 };
 
 // Reducer
 const moviesReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_MOVIES:
-      return { ...state, user: action.payload };
+      return { ...state, movies: action.payload };
     default:
       return state;
   }

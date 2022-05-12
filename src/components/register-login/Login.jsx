@@ -8,9 +8,14 @@ const Login = () => {
 
   const dispatch = useDispatch();
 
+  // const navigate = useNavigate();
+
+  // const user = useSelector((state) => state.signUpReducer.user);
+
   const login = (e) => {
     e.preventDefault();
     dispatch(loginAPI(username));
+    // navigate('/movies')
   };
 
   return (

@@ -21,10 +21,11 @@ const Register = () => {
         </h1>
         <form className="mt-16 px-10">
           <label htmlFor="username" className="block">
+            <span className="mb-1 block font-semibold">Username</span>
             <input
               type="text"
               id="username"
-              placeholder="Enter username"
+              placeholder="Please enter username"
               className="w-full py-3 border px-3 focus:outline-gray-800"
               value={username}
               onChange={(e) => setUsername(e.target.value)}

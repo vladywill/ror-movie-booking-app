@@ -7,7 +7,7 @@ import {
 
 const Movie = () => (
   <div className="overflow-hidden pb-10 shadow-lg mx-4">
-    <div className="bg-gray-800 h-56 text-center flex justify-center items-center relative w-full">
+    <div className="bg-gray-800 h-56 text-center flex justify-center z-[-10] items-center relative w-full">
       <p>Movie image</p>
       <button type="button" className="py-3 px-5 rounded-full bg-white absolute bottom-0 right-0 shadow-xl -mb-6 mr-4 text-lg hover:bg-gray-900 hover:text-white hover:border border text-gray-900">Reserve</button>
     </div>

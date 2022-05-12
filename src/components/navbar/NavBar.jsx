@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/navbar/NavBar.scss';
 import Footer from './Footer';
+import Signout from './Signout';
 
 const NavBar = () => {
   const [open, setOpen] = useState(true);
@@ -75,6 +76,9 @@ const NavBar = () => {
             ))}
           </ul>
         </nav>
+        <div>
+          <Signout />
+        </div>
         <div className={`${!open && 'hidden'} absolute bottom-[0]`}>
           <Footer />
         </div>

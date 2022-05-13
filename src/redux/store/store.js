@@ -4,10 +4,12 @@ import logger from 'redux-logger';
 import signUpReducer from '../reducers/signUpReducer';
 import moviesReducer from '../reducers/moviesReducer';
 
-const reducer = combineReducers({
+const reducers = {
   signUpReducer,
   moviesReducer,
-});
+};
+
+const reducer = combineReducers(reducers);
 
 const store = createStore(reducer, applyMiddleware(logger, thunk));
 

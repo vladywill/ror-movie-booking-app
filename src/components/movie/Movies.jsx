@@ -1,30 +1,25 @@
+/* eslint-disable array-callback-return */
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import NavBar from '../navbar/NavBar';
 import Movie from './Movie';
 import { fetchMovies } from '../../redux/reducers/moviesReducer';
 
 const Movies = () => {
-  // const movies = useSelector((state) => state.moviesReducer);
+  const movies = useSelector((state) => state.moviesReducer.movies);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchMovies());
   }, []);
 
-  // console.log(movies);
-
   return (
     <>
       <NavBar />
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 py-24 pl-32 pr-4">
-        <Movie />
-        <Movie />
-        <Movie />
-        <Movie />
-        <Movie />
-        <Movie />
+        {movies
+          && movies.map((movie) => (<Movie key={movie.id} movie={movie} />))}
       </div>
     </>
   );

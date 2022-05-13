@@ -15,18 +15,15 @@ export const movies = (payload) => ({
 });
 
 export const fetchMovies = () => async (dispatch) => {
-  axios.get('http://localhost:3000/api/v1/movies').then((response) => {
-    const newMovies = response.data.data.movies;
-
-    dispatch(movies(newMovies));
-  });
+  const res = await axios.get('http://localhost:3000/api/v1/movies');
+  const newMovies = res.data.data.movies;
+  dispatch(movies(newMovies));
 };
 
 // Reducer
 const moviesReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_MOVIES:
-      // return { ...state, movies: action.payload };
       return { movies: [...action.payload] };
     default:
       return state;

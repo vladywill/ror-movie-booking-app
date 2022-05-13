@@ -34,7 +34,7 @@ const Register = () => {
           <button
             onClick={signup}
             type="submit"
-            className="bg-gray-900 text-lg py-2 mt-5 w-full text-white mb-3 border-4 hover:border-4 hover:border-gray-800 hover:bg-white hover:text-gray-900"
+            className="bg-lime-500 text-lg py-2 mt-5 w-full text-white mb-3 border-4 hover:border-4 hover:border-gray-800 hover:bg-white hover:text-gray-900"
           >
             Register
           </button>

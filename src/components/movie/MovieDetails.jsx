@@ -13,11 +13,11 @@ const MovieDetails = () => {
   return (
     <>
       <NavBar />
-      <div className="container mx-auto py-24 px-32 flex">
-        <div className="w-3/5 mr-10">
+      <div className="container mx-auto py-24 pl-24 pr-6 md:px-32 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mr-10 w-full">
           <img src={movie.photo} alt="Movie poster" className="shadow-lg" />
         </div>
-        <div className="w-2/5 bg-white shadow-lg relative pb-5">
+        <div className=" bg-white shadow-lg relative pb-5 w-full">
           <div className="bg-gray-900 py-2">
             <h2 className="text-lg text-white text-center">
               Movie details

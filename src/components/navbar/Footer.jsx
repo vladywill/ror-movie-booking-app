@@ -7,10 +7,16 @@ import {
   faLinkedin,
   faTelegram,
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+import Signout from './Signout';
 
 const Footer = () => (
   <footer className="footer">
     <div>
+      <Link to="/">
+        {' '}
+        <Signout />
+      </Link>
       <ul className="flex gap-5 m-auto w-[50%]">
         <li className="bg-[#00] text-[#fff]">
           <a href="/">

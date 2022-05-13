@@ -53,8 +53,8 @@ const NavBar = () => {
               <li
                 key={uuidv4()}
                 className={`${
-                  open && 'hover:bg-light-white rounded-md'
-                } hover:opacity-[0.5] text-gray-300 text-sm flex pb-7 items-center gap-x-4 p-2 pl-0`}
+                  open && 'hover:bg-light-white hover:text-white rounded-md'
+                } hover:opacity-[0.5] hover:text-white text-gray-300 text-sm flex pb-7 items-center gap-x-4 p-2 pl-0`}
               >
                 <Link to={menu.href}>
                   <FontAwesomeIcon

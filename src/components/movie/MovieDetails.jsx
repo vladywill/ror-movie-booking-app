@@ -50,7 +50,7 @@ const MovieDetails = () => {
           </div>
           <button
             type="button"
-            className="absolute bottom-0 mb-2 right-0 mt-4 mr-5 bg-gray-600 px-12 py-2 text-lg text-white hover:bg-gray-800"
+            className="absolute bottom-0 mb-2 right-0 mt-4 mr-5 bg-lime-500 px-12 py-2 text-lg text-white hover:bg-gray-800"
           >
             Reserve
           </button>

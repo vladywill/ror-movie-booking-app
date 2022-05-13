@@ -18,7 +18,7 @@ const Movie = ({ movie }) => (
       </button>
     </div>
     <div className="mt-10 text-center">
-      <Link to="/movies/:id" className="font-semibold">
+      <Link to={`/movies/${movie.id}`} className="font-semibold">
         {movie.title}
       </Link>
     </div>

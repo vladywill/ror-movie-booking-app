@@ -6,7 +6,7 @@ const LandingPage = () => (
   <div className="landing-hero">
     <NavBar />
     <div className="container mx-auto px-32 flex justify-center items-baseline">
-      <div className="w-3/5 md:w-7/12 h-64 bg-gray-900 absolute bottom-0 ml-12 rounded-tr-full rounded-tl-full flex justify-center">
+      <div className="w-3/5 md:w-7/12 h-64 bg-lime-800 absolute bottom-0 ml-12 rounded-tr-full rounded-tl-full flex justify-center">
         <div className="md:w-8/12 py-10">
           <h1 className="text-center text-sm md:text-3xl text-white">
             Doctor Strange

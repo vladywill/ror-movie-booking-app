@@ -24,7 +24,7 @@ h6 {
 .landing-hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../public/images/hero-bg.jpg");
+  background-image: url("../public/images/hero-lime.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -35,7 +35,7 @@ h6 {
   height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../public/images/login-register.jpg");
+    url("../public/images/landing-lime.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -44,6 +44,9 @@ To get a local copy up and running follow these simple example steps.
 
 - ```cd movie-booking-app-frontend```
 
+### Backend Project Repo
+[Project Repo](https://github.com/KingsleyIbe/movie-booking-app-backend)
+
 ### Running The App Locally
 
 - Run `npm install`

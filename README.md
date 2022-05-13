@@ -4,6 +4,12 @@ This is a movie app which allows registered users to book and reserve movies of 
 - This app is a front-end side of final capstone project. You can find the back-end app [here](https://github.com/KingsleyIbe/movie-booking-app-backend). 
 - Direct link to [Kanban board](https://github.com/KingsleyIbe/movie-booking-app-frontend/projects/1) for whole capstone project
 
+Kanban Board Screenshot:
+![image](https://user-images.githubusercontent.com/43799727/165486364-22fbb1cb-349d-40eb-a184-49dddb39461d.png)
+
+Project Repo:
+[View Here](https://github.com/KingsleyIbe/movie-booking-app-frontend)
+
 
 # Demo Account
 
@@ -14,6 +20,7 @@ This is a movie app which allows registered users to book and reserve movies of 
  - Redux
  - React Rpouter DOM
  - API
+ - Tailwind css
  
 
 ## The learning objective of this project are

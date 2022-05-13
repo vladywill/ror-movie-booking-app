@@ -4,10 +4,10 @@ import logger from 'redux-logger';
 import signUpReducer from '../reducers/signUpReducer';
 import moviesReducer from '../reducers/moviesReducer';
 
-const reducers = {
-  signUpReducer,
-  moviesReducer,
-};
+export const store = configureStore({
+  reducer: {},
+});
+
 
 const reducer = combineReducers(reducers);
 

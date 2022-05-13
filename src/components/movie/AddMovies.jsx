@@ -114,7 +114,7 @@ const AddMovies = () => (
           <div className="mt-3 flex justify-end">
             <button
               type="submit"
-              className="mt-5 py-3 px-16 bg-gray-900 text-white"
+              className="mt-5 py-3 px-16 bg-lime-500 hover:bg-lime-800 text-white"
             >
               Save Movie
             </button>

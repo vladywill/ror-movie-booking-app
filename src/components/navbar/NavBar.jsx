@@ -18,7 +18,8 @@ const NavBar = () => {
   const menu = [
     { title: 'Home', icon: faHouse, href: '/home' },
     { title: 'Movies', icon: faCameraRetro, href: '/movies' },
-    { title: 'My Reservation', icon: faCartArrowDown, href: 'my-reservation' },
+    { title: 'Add Movie', icon: faCamera, href: '/movies/create' },
+    { title: 'My Reservation', icon: faCartArrowDown, href: '/my-reservation' },
   ];
   return (
     <div>

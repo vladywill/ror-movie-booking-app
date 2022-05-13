@@ -14,8 +14,8 @@ const MovieDetails = () => {
     <>
       <NavBar />
       <div className="container mx-auto py-24 px-32 flex">
-        <div className="w-3/5 bg-gray-400 mr-10 h-96 p-5">
-          <img src={movie.photo} alt="" />
+        <div className="w-3/5 mr-10 h-96">
+          <img src={movie.photo} alt="Movie poster" className="shadow-lg" />
         </div>
         <div className="w-2/5 bg-white shadow-lg relative">
           <div className="bg-gray-900 py-2">

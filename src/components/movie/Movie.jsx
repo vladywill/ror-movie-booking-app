@@ -8,7 +8,7 @@ import {
 
 const Movie = ({ movie }) => (
   <div className="overflow-hidden pb-10 shadow-lg mx-4">
-    <div className="h-56 text-center flex justify-center items-center relative w-full">
+    <div className="h-56 text-center z-[-10] flex justify-center items-center relative w-full">
       <Link to={`/movies/${movie.id}`} className="font-semibold">
         <img src={movie.photo} alt="Movie poster" />
       </Link>

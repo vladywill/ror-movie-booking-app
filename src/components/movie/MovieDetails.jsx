@@ -14,10 +14,10 @@ const MovieDetails = () => {
     <>
       <NavBar />
       <div className="container mx-auto py-24 px-32 flex">
-        <div className="w-3/5 mr-10 h-96">
+        <div className="w-3/5 mr-10">
           <img src={movie.photo} alt="Movie poster" className="shadow-lg" />
         </div>
-        <div className="w-2/5 bg-white shadow-lg relative">
+        <div className="w-2/5 bg-white shadow-lg relative pb-5">
           <div className="bg-gray-900 py-2">
             <h2 className="text-lg text-white text-center">
               Movie details
@@ -43,14 +43,14 @@ const MovieDetails = () => {
               <span className="text-gray-500">Playing Time:</span>
               <span className="text-gray-600">{movie.playing_time}</span>
             </div>
-            <div className="mb-3 mt-5">
+            <div className="mb-3 my-5">
               <span className="text-gray-500 block font-semibold mb-2">Description:</span>
-              <span className="text-gray-600 mb-4 block">{movie.description}</span>
+              <span className="mb-8 block text-gray-400">{movie.description}</span>
             </div>
           </div>
           <button
             type="button"
-            className="absolute bottom-0 right-0 my-4 mr-5 bg-gray-600 px-12 py-2 text-lg text-white hover:bg-gray-800"
+            className="absolute bottom-0 mb-2 right-0 mt-4 mr-5 bg-gray-600 px-12 py-2 text-lg text-white hover:bg-gray-800"
           >
             Reserve
           </button>

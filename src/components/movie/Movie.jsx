@@ -14,7 +14,7 @@ const Movie = ({ movie }) => (
       </Link>
       <button
         type="button"
-        className="py-3 px-5 rounded-full bg-white absolute bottom-0 right-0 shadow-xl -mb-6 mr-4 text-lg hover:bg-gray-900 hover:text-white hover:border border text-gray-900"
+        className="py-3 px-5 rounded-full bg-white absolute bottom-0 right-0 shadow-xl -mb-6 mr-4 text-lg hover:bg-gray-900 hover:text-white hover:border border text-gray-900 cursor-pointer"
       >
         Reserve
       </button>

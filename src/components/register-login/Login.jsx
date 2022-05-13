@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import { loginAPI } from '../../redux/reducers/signUpReducer';
 
 const Login = () => {
@@ -8,14 +8,18 @@ const Login = () => {
 
   const dispatch = useDispatch();
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const user = useSelector((state) => state.signUpReducer.user);
+  const user = useSelector((state) => state.signUpReducer.user);
 
   const login = (e) => {
     e.preventDefault();
     dispatch(loginAPI(username));
-    // navigate('/movies')
+    if (user) {
+      navigate('/movies');
+    } else {
+      navigate('/');
+    }
   };
 
   return (

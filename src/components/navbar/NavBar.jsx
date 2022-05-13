@@ -22,7 +22,7 @@ const NavBar = () => {
   ];
   return (
     <div>
-      <header className="flex fixed">
+      <header className="flex fixed z-10">
         <nav
           className={`${open ? 'w-72' : 'w-20'} 
         h-screen p-5 pt-8 bg-dark-purple duration-300 z-1 relative`}

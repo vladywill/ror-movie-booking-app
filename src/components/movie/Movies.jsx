@@ -17,7 +17,7 @@ const Movies = () => {
   return (
     <>
       <NavBar />
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 py-24 pl-32 pr-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 py-24 pl-20 md:pl-32 pr-4">
         {movies
           && movies.map((movie) => (<Movie key={movie.id} movie={movie} />))}
       </div>

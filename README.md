@@ -10,10 +10,9 @@ Kanban Board Screenshot:
 Project Repo:
 [View Here](https://github.com/KingsleyIbe/movie-booking-app-frontend)
 
+# [Live Demo]( https://kingsleyibe.github.io/movie-booking-app-frontend/)
 
 # Demo Account
-
-
 
 # Built with
  - React

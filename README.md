@@ -10,10 +10,9 @@ Kanban Board Screenshot:
 Project Repo:
 [View Here](https://github.com/KingsleyIbe/movie-booking-app-frontend)
 
+# [Live Demo]( https://kingsleyibe.github.io/movie-booking-app-frontend/)
 
 # Demo Account
-
-
 
 # Built with
  - React
@@ -43,6 +42,9 @@ To get a local copy up and running follow these simple example steps.
 - ```git https://github.com/KingsleyIbe/movie-booking-app-frontend.git``
 
 - ```cd movie-booking-app-frontend```
+
+### Backend Project Repo
+[Project Repo](https://github.com/KingsleyIbe/movie-booking-app-backend)
 
 ### Running The App Locally
 

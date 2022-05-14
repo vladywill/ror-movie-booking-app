@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     dispatch(loginAPI(username));
     if (user) {
-      navigate('/movies');
+      navigate('/home');
     } else {
       navigate('/');
     }

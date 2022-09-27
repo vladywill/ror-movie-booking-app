@@ -4,10 +4,19 @@ import NavBar from '../navbar/NavBar';
 import Input from './Input';
 
 const AddMovies = () => {
-  const data = ['Title', 'Director', 'Release Date', 'Playing Time', 'Genre', 'Ticket Price', 'Lead cast', 'Country', 'Photo'];
+  const data = [
+    'Title',
+    'Director',
+    'Release Date',
+    'Playing Time',
+    'Genre',
+    'Ticket Price',
+    'Lead cast',
+    'Country',
+    'Photo',
+  ];
 
   return (
-
     <>
       <NavBar />
       <div className="w-full flex justify-center bg-gray-100 py-16">
@@ -16,7 +25,6 @@ const AddMovies = () => {
             <h1>Add Movie</h1>
           </div>
           <form className="grid grid-cols-1 md:grid-cols-2 px-10 mt-12 w-full">
-
             {data.map((data) => (
               <div className="mb-4 w-full" key={uuidv4()}>
                 <label htmlFor="title" className="block mr-5">

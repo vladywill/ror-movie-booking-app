@@ -3,12 +3,7 @@
 import React from 'react';
 
 const Input = ({ type, id, className }) => (
-  <input
-    type={type}
-    id={id}
-    className={className}
-  />
-
+  <input type={type} id={id} className={className} />
 );
 
 export default Input;

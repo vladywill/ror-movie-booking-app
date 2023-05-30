@@ -9,8 +9,8 @@ import {
 const Movie = ({ movie }) => (
   <div className="overflow-hidden pb-10 shadow-lg mx-4">
     <div className="h-56 text-center z-[-10] flex justify-center items-center relative w-full">
-      <Link to={`/movies/${movie.id}`} className="font-semibold">
-        <img src={movie.photo} alt="Movie poster" />
+      <Link to={`/movies/${movie?.id}`} className="font-semibold">
+        <img src={movie?.photo} alt="Movie poster" />
       </Link>
       <button
         type="button"
@@ -20,12 +20,12 @@ const Movie = ({ movie }) => (
       </button>
     </div>
     <div className="mt-10 text-center">
-      <Link to={`/movies/${movie.id}`} className="font-semibold">
-        {movie.title}
+      <Link to={`/movies/${movie?.id}`} className="font-semibold">
+        {movie?.title}
       </Link>
     </div>
     <p className="mt-10 text-center text-sm text-gray-400">
-      {movie.description}
+      {movie?.description}
     </p>
     <div className="mt-5 flex justify-center items-center">
       <ul className="flex items-center">

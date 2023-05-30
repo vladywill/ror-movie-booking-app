@@ -44,7 +44,7 @@ const Movie = ({ movie }) => (
 );
 
 Movie.propTypes = {
-  movie: PropTypes.string.isRequired,
+  movie: PropTypes.objectOf.isRequired,
 };
 
 export default Movie;

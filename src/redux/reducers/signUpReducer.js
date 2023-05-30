@@ -30,9 +30,9 @@ export const signupAPI = (username) => async (dispatch) => {
         username,
       },
     );
-    user = fetchedUser.data.user;
+    user = fetchedUser?.data?.user;
   } catch (error) {
-    user = error.response.data.user;
+    user = error?.response?.data?.user;
   }
   dispatch(signup(user));
 };
@@ -43,9 +43,9 @@ export const loginAPI = (username) => async (dispatch) => {
     const fetchedUser = await axios.post('http://localhost:3000/api/v1/login', {
       username,
     });
-    user = fetchedUser.data.user;
+    user = fetchedUser?.data?.user;
   } catch (error) {
-    user = error.response.data.user;
+    user = error?.response?.data?.user;
   }
   dispatch(login(user));
 };

@@ -16,7 +16,7 @@ export const movies = (payload) => ({
 
 export const fetchMovies = () => async (dispatch) => {
   const res = await axios.get('http://localhost:3000/api/v1/movies');
-  const newMovies = res.data.data.movies;
+  const newMovies = res?.data?.data?.movies;
   dispatch(movies(newMovies));
 };
 

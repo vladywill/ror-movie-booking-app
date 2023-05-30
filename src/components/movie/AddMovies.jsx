@@ -25,7 +25,7 @@ const AddMovies = () => {
             <h1>Add Movie</h1>
           </div>
           <form className="grid grid-cols-1 md:grid-cols-2 px-10 mt-12 w-full">
-            {data.map((data) => (
+            {data && data?.map((data) => (
               <div className="mb-4 w-full" key={uuidv4()}>
                 <label htmlFor="title" className="block mr-5">
                   <span className="block mb-1">{data}</span>

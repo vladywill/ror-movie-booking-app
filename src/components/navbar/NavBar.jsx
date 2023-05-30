@@ -4,23 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import {
   faAngleDoubleLeft,
-  faHouse,
-  faCartArrowDown,
-  faCameraRetro,
   faCamera,
 } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/navbar/NavBar.scss';
 import Footer from './Footer';
+import menu from './NavBarItems';
 
 const NavBar = () => {
   const [open, setOpen] = useState(true);
 
-  const menu = [
-    { title: 'Home', icon: faHouse, href: '/home' },
-    { title: 'Movies', icon: faCameraRetro, href: '/movies' },
-    { title: 'Add Movie', icon: faCamera, href: '/movies/create' },
-    { title: 'My Reservation', icon: faCartArrowDown, href: '/my-reservation' },
-  ];
   return (
     <div>
       <header className="flex fixed z-10">
@@ -50,7 +42,7 @@ const NavBar = () => {
             </h1>
           </div>
           <ul className="p-7 font-semibold flex-1 h-screen">
-            {menu.map((menu) => (
+            {menu && menu?.map((menu) => (
               <li
                 key={uuidv4()}
                 className={`${
@@ -59,18 +51,18 @@ const NavBar = () => {
               >
                 <Link to={menu.href}>
                   <FontAwesomeIcon
-                    icon={menu.icon}
+                    icon={menu?.icon}
                     alt="Icon"
                     className="pl-0"
                   />
                 </Link>
                 <Link
-                  to={menu.href}
+                  to={menu?.href}
                   className={`${
                     !open && 'hidden'
                   } origin-left duration-300 text-[16px]  `}
                 >
-                  {menu.title}
+                  {menu?.title}
                 </Link>
               </li>
             ))}

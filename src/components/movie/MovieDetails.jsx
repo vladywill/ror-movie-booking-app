@@ -15,7 +15,7 @@ const MovieDetails = () => {
       <NavBar />
       <div className="container mx-auto py-24 pl-24 pr-6 md:px-32 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="mr-10 w-full">
-          <img src={movie.photo} alt="Movie poster" className="shadow-lg" />
+          <img src={movie?.photo} alt="Movie poster" className="shadow-lg" />
         </div>
         <div className=" bg-white shadow-lg relative pb-5 w-full">
           <div className="bg-gray-900 py-2">
@@ -23,15 +23,15 @@ const MovieDetails = () => {
           </div>
           <div className="px-6">
             <div className="mb-3 mt-5 flex justify-between items-center">
-              <span className="text-gray-600 font-semibold">{movie.title}</span>
+              <span className="text-gray-600 font-semibold">{movie?.title}</span>
             </div>
             <div className="mb-3 mt-5 flex justify-between items-center">
               <span className="text-gray-500">Launch date:</span>
-              <span className="text-gray-600">{movie.release_date}</span>
+              <span className="text-gray-600">{movie?.release_date}</span>
             </div>
             <div className="mb-3 mt-5 flex justify-between items-center">
               <span className="text-gray-500">Ticket price:</span>
-              <span className="text-gray-600">{movie.ticket_price}</span>
+              <span className="text-gray-600">{movie?.ticket_price}</span>
             </div>
             <div className="mb-3 mt-5 flex justify-between items-center">
               <span className="text-gray-500">Country:</span>
@@ -39,14 +39,14 @@ const MovieDetails = () => {
             </div>
             <div className="mb-3 mt-5 flex justify-between items-center">
               <span className="text-gray-500">Playing Time:</span>
-              <span className="text-gray-600">{movie.playing_time}</span>
+              <span className="text-gray-600">{movie?.playing_time}</span>
             </div>
             <div className="mb-3 my-5">
               <span className="text-gray-500 block font-semibold mb-2">
                 Description:
               </span>
               <span className="mb-8 block text-gray-400">
-                {movie.description}
+                {movie?.description}
               </span>
             </div>
           </div>

@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import {
   TiSocialFacebook,
   TiSocialTwitter,
@@ -42,5 +42,9 @@ const Movie = ({ movie }) => (
     </div>
   </div>
 );
+
+Movie.propTypes = {
+  movie: PropTypes.string.isRequired,
+};
 
 export default Movie;
